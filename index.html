@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MillyTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+        }
+        .text-neon-green {
+            color: #38a169;
+        }
+        .bg-gradient-tech {
+            background-image: linear-gradient(to right, #2a4365, #1d4068);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-gradient-tech text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- MillyTech Logo (inline SVG for simplicity) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-neon-green">
+                    <path d="M12 2L2 22h20L12 2zm0 3.24L18.66 18H5.34L12 5.24zm0 2.52L14.7 12H9.3l2.7-4.24z"/>
+                    <path fill-rule="evenodd" d="M12 2A10 10 0 1 0 12 22 10 10 0 0 0 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-2xl font-bold">MillyTech</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-neon-green transition-colors duration-300">About</a>
+                <a href="#services" class="hover:text-neon-green transition-colors duration-300">Services</a>
+                <a href="#contact" class="hover:text-neon-green transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="relative bg-white py-12 md:py-24 text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 animate-fade-in">
+                    Your Trusted Partner in Technology
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in-delay-1">
+                    At MillyTech, we provide expert PC building, repair, and consulting services to help you stay connected and productive.
+                </p>
+                <a href="#contact" class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300">
+                    Get a Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About MillyTech</h2>
+                <div class="max-w-4xl mx-auto text-center text-gray-700 space-y-4">
+                    <p>
+                        Founded with a passion for technology, MillyTech is dedicated to providing high-quality, reliable, and affordable tech solutions. Whether you're a gamer, a creative professional, or a small business owner, we understand the importance of a well-functioning computer.
+                    </p>
+                    <p>
+                        Our team of experienced technicians is committed to delivering exceptional service and support, ensuring your technology works for you. We believe in building lasting relationships with our clients through honesty, transparency, and expertise.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex justify-center mb-4">
+                            <!-- Icon for PC Building -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-blue-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L12 21h4.5a2.25 2.25 0 0 0 2.25-2.25V5.5a2.25 2.25 0 0 0-2.25-2.25H9.75a2.25 2.25 0 0 0-2.25 2.25V17M12 21h-2.25a2.25 2.25 0 0 1-2.25-2.25V5.5a2.25 2.25 0 0 1 2.25-2.25H12m1.5 0h2.25c.621 0 1.125.504 1.125 1.125V21"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Custom PC Builds</h3>
+                        <p class="text-gray-600 text-center">
+                            We build custom PCs tailored to your specific needs and budget, from high-end gaming rigs to powerful workstations.
+                        </p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex justify-center mb-4">
+                            <!-- Icon for Repairs -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-blue-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 0 0 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Repair & Maintenance</h3>
+                        <p class="text-gray-600 text-center">
+                            From virus removal to hardware upgrades, we handle all types of PC repairs to get you back up and running.
+                        </p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex justify-center mb-4">
+                            <!-- Icon for Consulting -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-blue-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V9z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 19.5c.338 0 .674-.035 1-.106v-3.894a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v3.894c.326.071.662.106 1 .106H17z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Expert Consulting</h3>
+                        <p class="text-gray-600 text-center">
+                            Need advice on your next purchase or how to optimize your setup? We offer personalized tech consulting services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
+                <div class="max-w-xl mx-auto bg-white rounded-lg shadow-md p-8">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 MillyTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
